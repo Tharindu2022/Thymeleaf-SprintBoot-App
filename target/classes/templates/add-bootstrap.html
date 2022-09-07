@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Bootstrap to Thymeleaf</title>
+    <!-- CSS only -->
+    <link th:href="@{bootstrap.min.css}" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h1>Hello !</h1>
+
+        <h1 th:text="${a1}"></h1>
+        <h1>to Student Management System.</h1>
+        <table class="table table-responsive table-bordered table-striped">
+            <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Student Contact Number</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>S-001</td>
+                <td>Madhusankha</td>
+                <td>0766875602</td>
+            </tr>
+            <tr>
+                <td>S-002</td>
+                <td>Yasas</td>
+                <td>0756855692</td>
+            </tr>
+            <tr>
+                <td>S-003</td>
+                <td>Banura</td>
+                <td>0762375602</td>
+            </tr>
+            <tr>
+                <td>S-004</td>
+                <td>Yasindu</td>
+                <td>0732372692</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+</div>
+</body>
+</html>
